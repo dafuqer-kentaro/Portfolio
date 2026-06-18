@@ -80,7 +80,7 @@ export default function Home() {
           <div className="grid grid-cols-12 gap-x-gutter gap-y-stack-xl">
             {/* Project 1 */}
             <div className="project-card group cursor-pointer col-span-12 lg:col-span-8">
-              <div className="relative mb-12 sm:mb-16 mt-4">
+              <div className="relative mb-24 sm:mb-32 mt-4">
                 {/* Main Background Image */}
                 <div className="overflow-hidden rounded-xl bg-surface-container border border-outline-variant/10">
                   <Image src="/projects/anvy.png" alt="Anvys Hub Main" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} className="scale-100 group-hover:scale-105 transition-transform duration-700 ease-out block" />
