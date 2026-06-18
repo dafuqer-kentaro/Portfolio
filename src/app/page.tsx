@@ -85,8 +85,8 @@ export default function Home() {
                 <Image src="/projects/anvy.png" alt="Anvys Hub POS" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} className="relative z-10 block opacity-100 group-hover:opacity-0 transition-opacity duration-700 ease-in-out" />
                 
                 {/* Image 2 (Dashboard - hidden by default, revealed on hover) */}
-                <div className="absolute inset-0 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out overflow-hidden">
-                  <Image src="/projects/anvy1.png" alt="Anvys Hub Dashboard" fill className="object-cover object-top" />
+                <div className="absolute inset-0 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out overflow-hidden bg-white rounded-xl">
+                  <Image src="/projects/anvy1.png" alt="Anvys Hub Dashboard" fill className="object-contain object-top" />
                 </div>
               </div>
               <div className="flex justify-between items-start">
