@@ -80,13 +80,12 @@ export default function Home() {
           <div className="grid grid-cols-12 gap-x-gutter gap-y-stack-xl">
             {/* Project 1 */}
             <div className="project-card group cursor-pointer col-span-12 lg:col-span-8">
-              <div className="overflow-hidden rounded-xl bg-surface-container aspect-video relative mb-8">
-                {/* Image 1 (Visible by default, fades out on hover) */}
-                <div className="absolute inset-0 opacity-100 group-hover:opacity-0 transition-opacity duration-700 ease-in-out z-10">
-                  <Image src="/projects/anvy.png" alt="Anvys Hub" fill className="object-cover object-top scale-100 group-hover:scale-105 transition-transform duration-700 ease-out" />
-                </div>
+              <div className="overflow-hidden rounded-xl bg-surface-container relative mb-8 border border-outline-variant/10">
+                {/* Image 1 (Dictates height, visible by default, fades out on hover) */}
+                <Image src="/projects/anvy.png" alt="Anvys Hub" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} className="opacity-100 group-hover:opacity-0 transition-all duration-700 ease-in-out scale-100 group-hover:scale-105 relative z-10 block" />
+                
                 {/* Image 2 (Hidden by default, fades in on hover) */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out z-20">
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out z-20 overflow-hidden">
                   <Image src="/projects/anvy1.png" alt="Anvys Hub Secondary" fill className="object-cover object-top scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
                 </div>
               </div>
