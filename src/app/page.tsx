@@ -62,7 +62,7 @@ export default function Home() {
             <span className="font-label-md text-xs sm:text-label-md text-on-surface-variant uppercase tracking-[0.2em]">Tech Stack</span>
           </div>
           <div className="flex flex-wrap gap-4">
-            {["React.js", "Next.js", "Laravel", "Python", "PHP", "TypeScript", "Tailwind CSS", "FastAPI", "MySQL", "Firebase", "SimPy"].map((skill) => (
+            {["React.js", "Next.js", "Laravel", "Python", "PHP", "TypeScript", "Tailwind CSS", "HTML/CSS", "MySQL", "Firebase"].map((skill) => (
               <span key={skill} className="bg-surface-container text-on-surface-variant px-6 py-3 rounded-full font-label-md text-sm uppercase tracking-wider hover:bg-surface-variant transition-colors cursor-default">
                 {skill}
               </span>
