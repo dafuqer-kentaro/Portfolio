@@ -150,10 +150,8 @@ export default function Home() {
           <div className="grid grid-cols-12 gap-x-gutter gap-y-stack-xl">
             {/* Certification 1 */}
             <div className="project-card group cursor-pointer col-span-12 lg:col-span-6">
-              <div className="overflow-hidden rounded-xl bg-surface-container-low aspect-[4/3] relative">
-                 <div className="absolute inset-0 flex items-center justify-center text-on-surface-variant/50 font-headline-md text-center px-4 bg-surface-variant/20">
-                   <span className="material-symbols-outlined text-6xl mb-2 text-primary">security</span>
-                 </div>
+              <div className="aspect-[4/3] bg-surface-container rounded-lg mb-6 overflow-hidden relative group">
+                <Image src="/certificates/Cybersecurity.png" alt="Cybersecurity Certificate" fill className="object-cover object-top scale-100 group-hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="mt-8 flex justify-between items-start">
                 <div>
@@ -163,7 +161,7 @@ export default function Home() {
                   </div>
                   <h3 className="font-headline-md text-2xl group-hover:text-secondary transition-colors leading-snug">Information Technology Specialist in Cybersecurity</h3>
                 </div>
-                <a href="/certificates/Cybersecurity.pdf" target="_blank" rel="noopener noreferrer" className="ml-4 flex-shrink-0 bg-primary text-on-primary px-4 py-2 rounded font-label-md text-sm hover:bg-secondary transition-colors flex items-center gap-2">
+                <a href="/certificates/Cybersecurity.pdf" target="_blank" rel="noopener noreferrer" className="ml-4 flex-shrink-0 bg-on-surface text-surface px-4 py-2 rounded font-label-md text-sm hover:bg-secondary transition-colors flex items-center gap-2 cursor-pointer">
                   View <span className="material-symbols-outlined text-sm">open_in_new</span>
                 </a>
               </div>
@@ -171,10 +169,8 @@ export default function Home() {
 
             {/* Certification 2 */}
             <div className="project-card group cursor-pointer col-span-12 lg:col-span-6">
-              <div className="overflow-hidden rounded-xl bg-surface-container-low aspect-[4/3] relative">
-                 <div className="absolute inset-0 flex items-center justify-center text-on-surface-variant/50 font-headline-md text-center px-4 bg-surface-variant/20">
-                   <span className="material-symbols-outlined text-6xl mb-2 text-primary">database</span>
-                 </div>
+              <div className="aspect-[4/3] bg-surface-container rounded-lg mb-6 overflow-hidden relative group">
+                <Image src="/certificates/Databases.png" alt="Databases Certificate" fill className="object-cover object-top scale-100 group-hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="mt-8 flex justify-between items-start">
                 <div>
@@ -184,7 +180,7 @@ export default function Home() {
                   </div>
                   <h3 className="font-headline-md text-2xl group-hover:text-secondary transition-colors leading-snug">Information Technology Specialist in Databases</h3>
                 </div>
-                <a href="/certificates/Databases.pdf" target="_blank" rel="noopener noreferrer" className="ml-4 flex-shrink-0 bg-primary text-on-primary px-4 py-2 rounded font-label-md text-sm hover:bg-secondary transition-colors flex items-center gap-2">
+                <a href="/certificates/Databases.pdf" target="_blank" rel="noopener noreferrer" className="ml-4 flex-shrink-0 bg-on-surface text-surface px-4 py-2 rounded font-label-md text-sm hover:bg-secondary transition-colors flex items-center gap-2 cursor-pointer">
                   View <span className="material-symbols-outlined text-sm">open_in_new</span>
                 </a>
               </div>
