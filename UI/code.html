@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>STUDIO. | Digital Designer Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Outfit:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#e9e8e7",
+                    "on-secondary": "#ffffff",
+                    "inverse-on-surface": "#f2f0f0",
+                    "inverse-surface": "#303031",
+                    "on-secondary-fixed": "#001452",
+                    "surface-variant": "#e4e2e2",
+                    "surface-container-low": "#f5f3f3",
+                    "on-error-container": "#93000a",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#474746",
+                    "outline": "#747878",
+                    "primary-container": "#1c1b1b",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "error-container": "#ffdad6",
+                    "surface-bright": "#fbf9f8",
+                    "outline-variant": "#c4c7c7",
+                    "primary-fixed": "#e5e2e1",
+                    "error": "#ba1a1a",
+                    "on-surface": "#1b1c1c",
+                    "secondary-container": "#0052fe",
+                    "tertiary-container": "#1a1c1c",
+                    "primary": "#000000",
+                    "surface-tint": "#5f5e5e",
+                    "secondary": "#003ec6",
+                    "on-primary": "#ffffff",
+                    "on-primary-container": "#858383",
+                    "surface": "#fbf9f8",
+                    "inverse-primary": "#c8c6c5",
+                    "surface-container-highest": "#e4e2e2",
+                    "tertiary": "#000000",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "on-secondary-container": "#dfe3ff",
+                    "surface-container": "#efeded",
+                    "on-tertiary-container": "#838484",
+                    "secondary-fixed": "#dde1ff",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "on-primary-fixed": "#1c1b1b",
+                    "background": "#fbf9f8",
+                    "surface-dim": "#dbdad9",
+                    "tertiary-fixed": "#e2e2e2",
+                    "on-background": "#1b1c1c",
+                    "on-secondary-fixed-variant": "#0038b6",
+                    "secondary-fixed-dim": "#b7c4ff",
+                    "on-surface-variant": "#444748"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "stack-sm": "8px",
+                    "gutter": "32px",
+                    "stack-lg": "80px",
+                    "container-max": "1280px",
+                    "stack-xl": "160px",
+                    "margin-mobile": "24px",
+                    "stack-md": "24px"
+            },
+            "fontFamily": {
+                    "label-md": ["Inter"],
+                    "display-lg": ["Outfit"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["Outfit"],
+                    "body-lg": ["Inter"],
+                    "headline-lg": ["Outfit"],
+                    "display-lg-mobile": ["Outfit"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-lg": ["96px", {"lineHeight": "1.05", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["24px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #fbf9f8;
+            color: #1b1c1c;
+            -webkit-font-smoothing: antialiased;
+        }
+        .project-card:hover .project-image {
+            transform: scale(1.05);
+        }
+        .nav-active-line::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 2px;
+            background-color: #003ec6;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="bg-surface/80 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-outline-variant/30">
+<nav class="flex justify-between items-center px-margin-desktop h-20 w-full max-w-container-max mx-auto">
+<div class="flex items-center">
+<a class="font-headline-md text-headline-md tracking-tighter text-primary" href="#">STUDIO.</a>
+</div>
+<div class="flex items-center gap-12">
+<a class="relative font-label-md text-label-md text-secondary border-b-2 border-secondary py-1 transition-all duration-300 ease-in-out" href="#">Work</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Process</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" href="#">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-label-md hover:bg-secondary transition-all duration-300 shadow-lg hover:shadow-secondary/20">
+            Hire Me
+        </button>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section: Full-width 12-column grid -->
+<section class="min-h-[90vh] flex flex-col justify-center px-margin-desktop max-w-container-max mx-auto py-stack-xl">
+<div class="grid grid-cols-12 gap-gutter"><div class="col-span-12 lg:col-span-7 flex flex-col justify-center">
+<h1 class="font-display-lg text-display-lg mb-stack-md animate-fade-in">
+        I'm Alex, a Digital Designer.
+    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg leading-relaxed">
+        Crafting high-end digital experiences for world-class brands. I specialize in minimal aesthetics, grid-based layouts, and purposeful micro-interactions.
+    </p>
+<div class="flex flex-row gap-6">
+<button class="bg-primary text-on-primary px-10 py-5 rounded font-label-md hover:bg-secondary transition-all duration-300 flex items-center justify-center gap-3 group text-lg">
+            View Projects
+            <span class="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_forward</span>
+</button>
+<button class="bg-transparent border border-primary/20 text-primary px-10 py-5 rounded font-label-md hover:bg-primary hover:text-on-primary transition-all duration-300 text-center text-lg">
+            Contact Me
+        </button>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-5 flex items-center justify-center lg:justify-end animate-fade-in">
+<div class="w-full max-w-md aspect-square overflow-hidden rounded-xl border border-outline-variant/30">
+<img alt="Alex - Digital Designer" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFqUZjtCiSTlweFglXVGS14RkGo61fK5qD7bV04yKTWd8hPv-N30Yiv1KGvpaOQxBOLgrNC3BFxAKc6_HkEUJ91q3CqsAlQNk1T7L4zJ3k1ZcZyezqSot6KuqEUsM2WzuhRKmysGaB0conDpyL0RJ24iE2Nchzv1pzkCg2KDrsM1i-vZhHsLsy-o_qRIgmHNCAnCnMDBipM05hoH6SIgXeaZ2e0rovUhNJmss_O7Tg_q2DsRu-6E40Z4PMEV51OpnzdMMTWHMQl4uP"/>
+</div>
+</div></div>
+</section>
+<!-- Featured Work Section: Multi-column layout -->
+<section class="px-margin-desktop max-w-container-max mx-auto pb-stack-xl">
+<div class="flex justify-between items-baseline mb-stack-lg border-b border-outline-variant/30 pb-8">
+<h2 class="font-headline-lg text-headline-lg">Selected Projects</h2>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-[0.2em]">Portfolio / 2024</span>
+</div>
+<!-- 12-column grid for project cards -->
+<div class="grid grid-cols-12 gap-x-gutter gap-y-stack-xl">
+<!-- Project 1: Large (Span 12) -->
+<div class="project-card group cursor-pointer col-span-12">
+<div class="overflow-hidden rounded-xl bg-surface-container-low aspect-[21/9]">
+<img class="project-image w-full h-full object-cover transition-transform duration-1000 ease-out" data-alt="A cinematic, ultra-wide landscape shot of a minimalist digital interface projected onto a monolithic concrete structure in a desert at dusk." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKrs_uxl3rOqah6FSKv8MV-bEvUtLy_v3kdFHQI03k1lIFKBCkoqau2LhmXnxuGZq6mew5NvZYzSTST6fpKhkq76xyTX6OBphaA6ZOTl-7bKfFiO19X8gq4GhcbYadZvqDJcDCvWiKUKJVGV6vXCUdCO5mnlZo46ckVIC9QqwC8gMmFh1-rIUOJpKNhWEb4a7U0m0rAJh0UEwUIkpf1WisbjYJe78WAnqaJyMJ756a-eRhn2MRMTh15Z_0iedHzWX7gHkPWkIMeELO"/>
+</div>
+<div class="mt-8 flex justify-between items-start">
+<div class="max-w-2xl">
+<div class="flex gap-3 mb-4">
+<span class="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-xs uppercase tracking-wider">Branding</span>
+<span class="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-xs uppercase tracking-wider">Interaction</span>
+</div>
+<h3 class="font-headline-md text-4xl group-hover:text-secondary transition-colors">Luminal Systems</h3>
+<p class="font-body-md text-body-lg text-on-surface-variant mt-4">
+                            Building a cohesive design language for the future of cloud computing architecture.
+                        </p>
+</div>
+<span class="material-symbols-outlined text-4xl opacity-0 group-hover:opacity-100 transition-all transform translate-x-[-20px] group-hover:translate-x-0">arrow_outward</span>
+</div>
+</div>
+<!-- Project 2: Side-by-side (Span 6) -->
+<div class="project-card group cursor-pointer col-span-12 lg:col-span-6">
+<div class="overflow-hidden rounded-xl bg-surface-container-low aspect-[4/3]">
+<img class="project-image w-full h-full object-cover transition-transform duration-1000 ease-out" data-alt="A macro studio shot of a sleek, matte black smartphone displaying a highly organized, typographic mobile application interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDidtScIm_yvinjMfayb-XLqb_21_ZBzrfXsK3Nj8YwZ6Ua6WRvsfERl_SsD9FRXm0fK0QqPiuY-LHMJ_a5J1TrHAXcJ7l_2yk_vEn7zyyClR8ie5G0ShG5aQiH6u0Jhjm9a3xiOonMI4USmTur1OJgHjF1TiCiriQLYb1KQE_fKj1EjTYbL9PxiMryCYj7c-tvnr__U6lq6hdQpguaVxyen6If3bNV-9NpKIvZTt_kONdCgq2prsNEhYwgmitDbzelnmE-5xvLlk1R"/>
+</div>
+<div class="mt-8">
+<div class="flex gap-3 mb-4">
+<span class="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-xs uppercase tracking-wider">Product Design</span>
+<span class="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-xs uppercase tracking-wider">Mobile</span>
+</div>
+<h3 class="font-headline-md text-3xl group-hover:text-secondary transition-colors">Vortex Mobile</h3>
+<p class="font-body-md text-on-surface-variant mt-2 max-w-md">
+                        Streamlining asset management for high-frequency trading platforms.
+                    </p>
+</div>
+</div>
+<!-- Project 3: Side-by-side (Span 6) -->
+<div class="project-card group cursor-pointer col-span-12 lg:col-span-6">
+<div class="overflow-hidden rounded-xl bg-surface-container-low aspect-[4/3]">
+<img class="project-image w-full h-full object-cover transition-transform duration-1000 ease-out" data-alt="A top-down architectural view of a minimalist workstation featuring a large, high-resolution monitor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXn7QsOAHhoKp5O-4bBpUY8CHP4U55JU85JyP7Jxt_A62yLHZfuelbm5eF2XZcSoWFvS6TcumJed4RflQIxCUGfFf-czCJbnrvHrvSQSaAEz3guMYO-koN8mVXrLULOSfF9E6g6jPgLrZ3dHvHl__neybSEbgVpGWGxfAcRZZdYWTl2ohyxv6JxplO0DOn2TgyJiSbQhAuEunn_Nee8gtBzL4EOMVdB_aqSArOykIO_4FcSt4Zz_2QcQ9MeMNBnVEx4NcT2mk14a2N"/>
+</div>
+<div class="mt-8">
+<div class="flex gap-3 mb-4">
+<span class="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-xs uppercase tracking-wider">Creative Direction</span>
+<span class="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-xs uppercase tracking-wider">Web</span>
+</div>
+<h3 class="font-headline-md text-3xl group-hover:text-secondary transition-colors">The Grid Agency</h3>
+<p class="font-body-md text-on-surface-variant mt-2 max-w-md">
+                        A portfolio experience focused on macro-typography and extreme white space.
+                    </p>
+</div>
+</div>
+</div>
+<div class="mt-stack-xl flex justify-center">
+<a class="inline-flex items-center gap-4 font-headline-md text-headline-md hover:text-secondary transition-all group" href="#">
+                Explore All Cases
+                <span class="material-symbols-outlined transition-transform group-hover:translate-x-4 text-4xl">arrow_right_alt</span>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/30 w-full py-24 px-margin-desktop flex flex-col items-center text-center">
+<div class="max-w-container-max w-full grid grid-cols-12 gap-gutter text-left">
+<div class="col-span-12 lg:col-span-4 mb-12 lg:mb-0">
+<span class="font-headline-md text-headline-md text-primary mb-6 block">STUDIO.</span>
+<p class="font-body-md text-on-surface-variant max-w-xs">
+                Independent digital designer focused on building premium digital products for a global audience.
+            </p>
+</div>
+<div class="col-span-6 lg:col-span-2 lg:col-start-7">
+<h4 class="font-label-md uppercase tracking-widest text-xs mb-8 text-on-surface-variant">Social</h4>
+<div class="flex flex-col gap-4">
+<a class="text-primary hover:text-secondary transition-colors font-body-md" href="#">Instagram</a>
+<a class="text-primary hover:text-secondary transition-colors font-body-md" href="#">LinkedIn</a>
+<a class="text-primary hover:text-secondary transition-colors font-body-md" href="#">Twitter (X)</a>
+</div>
+</div>
+<div class="col-span-6 lg:col-span-2">
+<h4 class="font-label-md uppercase tracking-widest text-xs mb-8 text-on-surface-variant">Contact</h4>
+<div class="flex flex-col gap-4">
+<a class="text-primary hover:text-secondary transition-colors font-body-md" href="#">Email Me</a>
+<a class="text-primary hover:text-secondary transition-colors font-body-md" href="#">Book a Call</a>
+</div>
+</div>
+<div class="col-span-12 mt-20 pt-8 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-sm text-on-surface-variant">© 2024 Studio Portfolio. All rights reserved.</p>
+<p class="font-body-md text-sm text-on-surface-variant italic">Crafted with precision &amp; care.</p>
+</div>
+</div>
+</footer>
+<script>
+    // Micro-interaction: Scroll reveal for project cards
+    const observerOptions = {
+        threshold: 0.15,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100', 'translate-y-0');
+                entry.target.classList.remove('opacity-0', 'translate-y-20');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.project-card').forEach(card => {
+        card.classList.add('transition-all', 'duration-1000', 'ease-out', 'opacity-0', 'translate-y-20');
+        observer.observe(card);
+    });
+
+    // Simple smooth scroll handling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if(target) {
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+</body></html>

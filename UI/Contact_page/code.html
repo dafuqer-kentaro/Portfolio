@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact | STUDIO.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Outfit:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#e9e8e7",
+                    "on-secondary": "#ffffff",
+                    "inverse-on-surface": "#f2f0f0",
+                    "inverse-surface": "#303031",
+                    "on-secondary-fixed": "#001452",
+                    "surface-variant": "#e4e2e2",
+                    "surface-container-low": "#f5f3f3",
+                    "on-error-container": "#93000a",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#474746",
+                    "outline": "#747878",
+                    "primary-container": "#1c1b1b",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "error-container": "#ffdad6",
+                    "surface-bright": "#fbf9f8",
+                    "outline-variant": "#c4c7c7",
+                    "primary-fixed": "#e5e2e1",
+                    "error": "#ba1a1a",
+                    "on-surface": "#1b1c1c",
+                    "secondary-container": "#0052fe",
+                    "tertiary-container": "#1a1c1c",
+                    "primary": "#000000",
+                    "surface-tint": "#5f5e5e",
+                    "secondary": "#003ec6",
+                    "on-primary": "#ffffff",
+                    "on-primary-container": "#858383",
+                    "surface": "#fbf9f8",
+                    "inverse-primary": "#c8c6c5",
+                    "surface-container-highest": "#e4e2e2",
+                    "tertiary": "#000000",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "on-secondary-container": "#dfe3ff",
+                    "surface-container": "#efeded",
+                    "on-tertiary-container": "#838484",
+                    "secondary-fixed": "#dde1ff",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "on-primary-fixed": "#1c1b1b",
+                    "background": "#fbf9f8",
+                    "surface-dim": "#dbdad9",
+                    "tertiary-fixed": "#e2e2e2",
+                    "on-background": "#1b1c1c",
+                    "on-secondary-fixed-variant": "#0038b6",
+                    "secondary-fixed-dim": "#b7c4ff",
+                    "on-surface-variant": "#444748"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "stack-sm": "8px",
+                    "gutter": "32px",
+                    "stack-lg": "80px",
+                    "container-max": "1280px",
+                    "stack-xl": "160px",
+                    "margin-mobile": "24px",
+                    "stack-md": "24px"
+            },
+            "fontFamily": {
+                    "label-md": ["Inter"],
+                    "display-lg": ["Outfit"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["Outfit"],
+                    "body-lg": ["Inter"],
+                    "headline-lg": ["Outfit"],
+                    "display-lg-mobile": ["Outfit"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["20px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #fbf9f8; color: #1b1c1c; -webkit-font-smoothing: antialiased; min-height: 100dvh; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .form-input-focus:focus { outline: none; border-color: #000000; ring: 0; }
+        @media (max-width: 768px) {
+            .nav-web { display: none; }
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-surface-container h-20 flex justify-between items-center px-margin-mobile md:px-margin-desktop transition-all duration-300">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer md:hidden" onclick="toggleDrawer()">menu</span>
+<span class="font-headline-md text-headline-md tracking-tighter text-primary">STUDIO.</span>
+</div>
+<nav class="nav-web hidden md:flex items-center gap-gutter">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Work</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Process</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" href="#">About</a>
+<a class="font-label-md text-label-md text-secondary border-b-2 border-secondary pb-1" href="#">Contact</a>
+</nav>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-lg font-label-md text-label-md hover:bg-secondary transition-all active:scale-95">
+        Hire Me
+    </button>
+</header>
+<!-- NavigationDrawer (Mobile Only) -->
+<div class="fixed inset-0 z-[60] bg-black/20 backdrop-blur-sm transition-opacity duration-500 opacity-0 pointer-events-none md:hidden" id="drawer">
+<div class="h-full w-4/5 max-w-sm bg-surface flex flex-col p-margin-mobile gap-stack-md transition-transform duration-500 -translate-x-full" id="drawer-content">
+<div class="flex justify-between items-center mb-stack-lg">
+<span class="font-headline-lg text-headline-lg-mobile text-primary">Menu</span>
+<span class="material-symbols-outlined cursor-pointer" onclick="toggleDrawer()">close</span>
+</div>
+<nav class="flex flex-col gap-6">
+<a class="flex items-center gap-4 font-headline-md text-headline-md text-on-surface-variant" href="#"><span class="material-symbols-outlined">grid_view</span> Work</a>
+<a class="flex items-center gap-4 font-headline-md text-headline-md text-on-surface-variant" href="#"><span class="material-symbols-outlined">auto_awesome</span> Process</a>
+<a class="flex items-center gap-4 font-headline-md text-headline-md text-on-surface-variant" href="#"><span class="material-symbols-outlined">person</span> About</a>
+<a class="flex items-center gap-4 font-headline-md text-headline-md text-secondary font-bold" href="#"><span class="material-symbols-outlined">mail</span> Contact</a>
+</nav>
+</div>
+</div>
+<!-- Main Content Canvas -->
+<main class="pt-32 pb-stack-xl px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col lg:flex-row gap-gutter lg:gap-stack-xl items-start">
+<!-- Left Column: Headline & Info -->
+<div class="lg:w-1/2 flex flex-col gap-stack-md">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary leading-tight">
+                Let's work together.
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                Have a project in mind or just want to say hi? I'm currently accepting new creative partnerships for late 2024.
+            </p>
+<!-- Secondary Info -->
+<div class="mt-stack-lg flex flex-col gap-stack-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase mb-2 tracking-widest">Direct Inquiry</span>
+<!-- Scaled up email link for desktop prominence -->
+<a class="font-display-lg text-headline-lg md:text-headline-lg text-secondary hover:text-primary transition-all duration-300 break-words" href="mailto:hello@studio.com">hello@studio.com</a>
+</div>
+<div class="flex flex-col mt-4">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase mb-4 tracking-widest">Follow</span>
+<div class="flex flex-wrap gap-stack-md">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors border-b border-transparent hover:border-primary" href="#">Instagram</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors border-b border-transparent hover:border-primary" href="#">LinkedIn</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors border-b border-transparent hover:border-primary" href="#">Behance</a>
+</div>
+</div>
+</div>
+<!-- Abstract Visual Asset -->
+<div class="relative mt-stack-md rounded-xl overflow-hidden aspect-[16/9] shadow-sm hidden lg:block border border-surface-container">
+<img class="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-1000" data-alt="A high-end, minimalist studio photography of a clean designer workspace with architectural shadows. The scene features a sleek black desk, a single ceramic sculpture, and soft natural light hitting a white textured wall. The atmosphere is professional, quiet, and sophisticated, using a monochromatic black and white color palette to evoke a premium brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6KkPs6L4ON8pmEVod7n7hhaddiwjp_x_NxOIxn3E9ASOrx8IG0HKFRxukOeH2LEbBgzFQ4Z3hbeCmvFCe4i4pHPHFLMoj2TQjDCtNhdngz2DfbDhkWGJX7dSVxjJlNBogjTRG9NhKUEQfpnGFYmeFGha4JCgL41h22wA_5lzGrUaW0g3dJ4SBFvWmhj2u7yr8KCMdozlVFofAOGpUrthI0QwT2GkEgoha3jyW7Ph_MGL-cMoBtTaJMDuwqU1OsxCuCAsKcBOslBTE"/>
+</div>
+</div>
+<!-- Right Column: Contact Form -->
+<div class="lg:w-1/2 w-full bg-surface-container-lowest p-8 md:p-16 rounded-xl shadow-[0px_4px_40px_rgba(0,0,0,0.03)] border border-surface-container">
+<form class="flex flex-col gap-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Name Field -->
+<div class="flex flex-col gap-3">
+<label class="font-label-md text-label-md text-on-surface-variant tracking-wider" for="name">FULL NAME</label>
+<input class="bg-surface border-0 border-b-2 border-outline-variant px-0 py-4 font-body-md text-body-md focus:ring-0 focus:border-primary transition-all placeholder:text-outline-variant" id="name" name="name" placeholder="John Doe" type="text"/>
+</div>
+<!-- Email Field -->
+<div class="flex flex-col gap-3">
+<label class="font-label-md text-label-md text-on-surface-variant tracking-wider" for="email">EMAIL ADDRESS</label>
+<input class="bg-surface border-0 border-b-2 border-outline-variant px-0 py-4 font-body-md text-body-md focus:ring-0 focus:border-primary transition-all placeholder:text-outline-variant" id="email" name="email" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<!-- Project Type Selection -->
+<div class="flex flex-col gap-3 mt-4">
+<label class="font-label-md text-label-md text-on-surface-variant tracking-wider">PROJECT TYPE</label>
+<div class="flex flex-wrap gap-3 pt-2">
+<button class="px-8 py-3 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-primary hover:text-on-primary transition-all active:scale-95" type="button">Branding</button>
+<button class="px-8 py-3 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm" type="button">Digital Product</button>
+<button class="px-8 py-3 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-primary hover:text-on-primary transition-all active:scale-95" type="button">Strategy</button>
+<button class="px-8 py-3 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-primary hover:text-on-primary transition-all active:scale-95" type="button">Web3</button>
+</div>
+</div>
+<!-- Message Field -->
+<div class="flex flex-col gap-3">
+<label class="font-label-md text-label-md text-on-surface-variant tracking-wider" for="message">YOUR MESSAGE</label>
+<textarea class="bg-surface border-0 border-b-2 border-outline-variant px-0 py-4 font-body-md text-body-md focus:ring-0 focus:border-primary transition-all resize-none placeholder:text-outline-variant" id="message" name="message" placeholder="Tell me about your vision..." rows="6"></textarea>
+</div>
+<!-- Submit Button -->
+<div class="mt-6">
+<button class="w-full bg-primary text-on-primary px-16 py-6 rounded font-label-md text-label-md uppercase tracking-widest hover:bg-secondary transition-all active:scale-95 flex items-center justify-center gap-4" type="submit">
+                        Send Message
+                        <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full bg-surface/80 backdrop-blur-xl flex justify-around items-center h-16 px-8 pb-safe shadow-[0px_-4px_20px_rgba(0,0,0,0.04)] z-50">
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-60" href="#"><span class="material-symbols-outlined">home</span></a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-60" href="#"><span class="material-symbols-outlined">work_outline</span></a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-60" href="#"><span class="material-symbols-outlined">account_circle</span></a>
+<a class="flex flex-col items-center justify-center text-secondary scale-110" href="#"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat_bubble_outline</span></a>
+</nav>
+<!-- Footer -->
+<footer class="w-full py-stack-xl px-margin-mobile md:px-margin-desktop bg-surface-container-lowest border-t border-surface-container">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-stack-md">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="font-headline-md text-headline-md text-primary">STUDIO.</span>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-60 max-w-xs text-center md:text-left">Elevating digital brands through strategic design and artful execution.</p>
+</div>
+<div class="flex flex-col items-center md:items-end gap-6">
+<div class="flex gap-gutter">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="font-label-md text-label-md text-secondary underline" href="#">Contact</a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-60">© 2024 Studio Portfolio. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+    function toggleDrawer() {
+        const drawer = document.getElementById('drawer');
+        const content = document.getElementById('drawer-content');
+        
+        if (drawer.classList.contains('opacity-0')) {
+            drawer.classList.remove('opacity-0', 'pointer-events-none');
+            drawer.classList.add('opacity-100');
+            content.classList.remove('-translate-x-full');
+            content.classList.add('translate-x-0');
+        } else {
+            drawer.classList.add('opacity-0', 'pointer-events-none');
+            drawer.classList.remove('opacity-100');
+            content.classList.add('-translate-x-full');
+            content.classList.remove('translate-x-0');
+        }
+    }
+
+    document.getElementById('drawer').addEventListener('click', function(e) {
+        if (e.target === this) toggleDrawer();
+    });
+
+    document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const btn = e.target.querySelector('button[type="submit"]');
+        const originalContent = btn.innerHTML;
+        btn.innerHTML = '<span class="material-symbols-outlined animate-spin">refresh</span> SENDING...';
+        btn.disabled = true;
+        
+        setTimeout(() => {
+            btn.innerHTML = 'MESSAGE SENT!';
+            btn.classList.replace('bg-primary', 'bg-secondary');
+            e.target.reset();
+            setTimeout(() => {
+                btn.innerHTML = originalContent;
+                btn.classList.replace('bg-secondary', 'bg-primary');
+                btn.disabled = false;
+            }, 3000);
+        }, 1500);
+    });
+
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 20) {
+            header.classList.add('h-16', 'shadow-sm');
+            header.classList.remove('h-20');
+        } else {
+            header.classList.remove('h-16', 'shadow-sm');
+            header.classList.add('h-20');
+        }
+    });
+</script>
+</body></html>
