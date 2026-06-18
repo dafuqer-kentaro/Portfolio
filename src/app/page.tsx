@@ -57,9 +57,9 @@ export default function Home() {
 
         {/* Technical Skills Section */}
         <section className="px-margin-desktop max-w-container-max mx-auto pb-stack-xl">
-          <div className="flex justify-between items-baseline mb-stack-lg border-b border-outline-variant/30 pb-8">
-            <h2 className="font-headline-lg text-headline-lg">Capabilities</h2>
-            <span className="font-label-md text-label-md text-on-surface-variant uppercase tracking-[0.2em]">Tech Stack</span>
+          <div className="flex flex-col sm:flex-row sm:justify-between items-start sm:items-baseline gap-2 sm:gap-0 mb-stack-lg border-b border-outline-variant/30 pb-6 sm:pb-8">
+            <h2 className="font-headline-lg text-4xl md:text-5xl lg:text-headline-lg">Capabilities</h2>
+            <span className="font-label-md text-xs sm:text-label-md text-on-surface-variant uppercase tracking-[0.2em]">Tech Stack</span>
           </div>
           <div className="flex flex-wrap gap-4">
             {["React.js", "Next.js", "Laravel", "Python", "PHP", "TypeScript", "Tailwind CSS", "FastAPI", "MySQL", "Firebase", "SimPy"].map((skill) => (
@@ -72,9 +72,9 @@ export default function Home() {
 
         {/* Featured Work Section */}
         <section id="work" className="px-margin-desktop max-w-container-max mx-auto pb-stack-xl">
-          <div className="flex justify-between items-baseline mb-stack-lg border-b border-outline-variant/30 pb-8">
-            <h2 className="font-headline-lg text-headline-lg">Selected Projects</h2>
-            <span className="font-label-md text-label-md text-on-surface-variant uppercase tracking-[0.2em]">Portfolio / {new Date().getFullYear()}</span>
+          <div className="flex flex-col sm:flex-row sm:justify-between items-start sm:items-baseline gap-2 sm:gap-0 mb-stack-lg border-b border-outline-variant/30 pb-6 sm:pb-8">
+            <h2 className="font-headline-lg text-4xl md:text-5xl lg:text-headline-lg">Selected Projects</h2>
+            <span className="font-label-md text-xs sm:text-label-md text-on-surface-variant uppercase tracking-[0.2em]">Portfolio / {new Date().getFullYear()}</span>
           </div>
           
           <div className="grid grid-cols-12 gap-x-gutter gap-y-stack-xl">
@@ -142,9 +142,9 @@ export default function Home() {
 
         {/* Certifications Section */}
         <section className="px-margin-desktop max-w-container-max mx-auto pb-stack-xl">
-          <div className="flex justify-between items-baseline mb-stack-lg border-b border-outline-variant/30 pb-8">
-            <h2 className="font-headline-lg text-headline-lg">Certifications</h2>
-            <span className="font-label-md text-label-md text-on-surface-variant uppercase tracking-[0.2em]">Credentials</span>
+          <div className="flex flex-col sm:flex-row sm:justify-between items-start sm:items-baseline gap-2 sm:gap-0 mb-stack-lg border-b border-outline-variant/30 pb-6 sm:pb-8">
+            <h2 className="font-headline-lg text-4xl md:text-5xl lg:text-headline-lg">Certifications</h2>
+            <span className="font-label-md text-xs sm:text-label-md text-on-surface-variant uppercase tracking-[0.2em]">Credentials</span>
           </div>
           
           <div className="grid grid-cols-12 gap-x-gutter gap-y-stack-xl">
