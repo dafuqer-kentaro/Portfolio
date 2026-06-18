@@ -107,7 +107,7 @@ export default function Home() {
 
             {/* Project 2: Queuing Simulator */}
             <div className="project-card group cursor-pointer col-span-12 lg:col-span-6">
-              <div className="overflow-hidden rounded-xl bg-surface-container aspect-[4/3] relative mb-8">
+              <div className="overflow-hidden rounded-xl bg-surface-container aspect-video relative mb-8 border border-outline-variant/10">
                  <Image src="/projects/cafe.png" alt="Queuing Simulator" fill className="object-cover object-top scale-100 group-hover:scale-105 transition-transform duration-700 ease-out" />
               </div>
               <div className="mt-8">
@@ -124,7 +124,7 @@ export default function Home() {
 
             {/* Project 3: GYMRAI */}
             <div className="project-card group cursor-pointer col-span-12 lg:col-span-6">
-              <div className="overflow-hidden rounded-xl bg-surface-container aspect-[4/3] relative mb-8">
+              <div className="overflow-hidden rounded-xl bg-surface-container aspect-video relative mb-8 border border-outline-variant/10">
                  <Image src="/projects/gymrai.png" alt="GYMRAI" fill className="object-cover object-top scale-100 group-hover:scale-105 transition-transform duration-700 ease-out" />
               </div>
               <div className="mt-8">
