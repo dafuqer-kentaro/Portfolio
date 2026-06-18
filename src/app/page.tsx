@@ -80,7 +80,7 @@ export default function Home() {
           <div className="grid grid-cols-12 gap-x-gutter gap-y-stack-xl">
             {/* Project 1 */}
             <div className="project-card group cursor-pointer col-span-12 lg:col-span-8">
-              <div className="overflow-hidden rounded-xl bg-surface-container relative mb-8 border border-outline-variant/10">
+              <div className="overflow-hidden rounded-xl bg-surface-container relative mb-8 border border-outline-variant/50 shadow-lg">
                 {/* Image 1 (POS - visible by default, sets container height) */}
                 <Image src="/projects/anvy.png" alt="Anvys Hub POS" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} className="relative z-10 block opacity-100 group-hover:opacity-0 transition-opacity duration-700 ease-in-out" />
                 
