@@ -6,16 +6,18 @@ export default function Home() {
       {/* TopAppBar */}
       <header className="bg-surface/80 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-outline-variant/30">
         <nav className="flex justify-between items-center px-margin-desktop h-20 w-full max-w-container-max mx-auto">
-          <div className="flex items-center">
-            <a className="font-headline-md text-headline-md tracking-tighter text-primary uppercase" href="#">KENT SERENCIO</a>
+          <div className="flex items-center flex-1">
+            <a className="font-headline-md text-headline-md tracking-tighter text-primary uppercase whitespace-nowrap" href="#">KENT SERENCIO</a>
           </div>
-          <div className="flex items-center gap-12">
-            <a className="relative font-label-md text-label-md text-secondary border-b-2 border-secondary py-1 transition-all duration-300 ease-in-out" href="#work">Work</a>
+          <div className="hidden md:flex items-center justify-center gap-12 flex-1">
+            <a className="relative font-label-md text-label-md text-secondary border-b-2 border-secondary pb-1 transition-all duration-300 ease-in-out" href="#work">Work</a>
             <a className="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" href="/contact">Contact</a>
           </div>
-          <button className="bg-primary text-on-primary px-8 py-3 rounded-full font-label-md hover:bg-secondary transition-all duration-300 shadow-lg hover:shadow-secondary/20">
-            Hire Me
-          </button>
+          <div className="flex-1 flex justify-end">
+            <a href="/contact" className="bg-primary text-on-primary px-8 py-3 rounded-full font-label-md hover:bg-secondary transition-all duration-300 shadow-lg hover:shadow-secondary/20">
+              Hire Me
+            </a>
+          </div>
         </nav>
       </header>
       
@@ -197,7 +199,7 @@ export default function Home() {
           <div className="col-span-12 lg:col-span-4 mb-12 lg:mb-0">
             <span className="font-headline-md text-headline-md text-primary mb-6 block uppercase">KENT SERENCIO</span>
             <p className="font-body-md text-on-surface-variant max-w-xs">
-              Computer Science student and full-stack developer focused on building premium digital products for a global audience.
+              Computer Science student passionate about technology, eager to learn, and seeking real-world experience in developing modern and meaningful digital solutions.
             </p>
           </div>
           
@@ -212,7 +214,7 @@ export default function Home() {
           <div className="col-span-6 lg:col-span-2">
             <h4 className="font-label-md uppercase tracking-widest text-xs mb-8 text-on-surface-variant">Contact</h4>
             <div className="flex flex-col gap-4">
-              <a className="text-primary hover:text-secondary transition-colors font-body-md" href="mailto:serencio.kent@yahoo.com">Email Me</a>
+              <a className="text-primary hover:text-secondary transition-colors font-body-md" href="mailto:k.serencio.549361@umindanao.edu.ph">Email Me</a>
               <a className="text-primary hover:text-secondary transition-colors font-body-md" href="#">Book a Call</a>
             </div>
           </div>

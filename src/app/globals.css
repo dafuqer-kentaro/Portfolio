@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+button, a, [role="button"] {
+  cursor: pointer;
+}
+
 @theme {
   --color-on-tertiary: #ffffff;
   --color-surface-container-high: #e9e8e7;
