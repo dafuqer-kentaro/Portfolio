@@ -80,8 +80,15 @@ export default function Home() {
           <div className="grid grid-cols-12 gap-x-gutter gap-y-stack-xl">
             {/* Project 1 */}
             <div className="project-card group cursor-pointer col-span-12 lg:col-span-8">
-              <div className="overflow-hidden rounded-xl bg-surface-container aspect-video relative mb-8">
-                <Image src="/projects/anvy.png" alt="Anvys Hub" fill className="object-cover object-top scale-100 group-hover:scale-105 transition-transform duration-700 ease-out" />
+              <div className="aspect-video relative mb-12 sm:mb-16 mt-4">
+                {/* Main Background Image */}
+                <div className="absolute inset-0 overflow-hidden rounded-xl bg-surface-container border border-outline-variant/10">
+                  <Image src="/projects/anvy.png" alt="Anvys Hub" fill className="object-cover object-top scale-100 group-hover:scale-105 transition-transform duration-700 ease-out" />
+                </div>
+                {/* Floating Overlap Image */}
+                <div className="absolute -bottom-8 -right-4 sm:-bottom-12 sm:-right-8 w-[65%] sm:w-[55%] aspect-video overflow-hidden rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-[6px] sm:border-[8px] border-surface bg-surface-container transform translate-y-2 group-hover:-translate-y-2 group-hover:-translate-x-2 transition-all duration-700 ease-out z-10">
+                  <Image src="/projects/anvy1.png" alt="Anvys Hub Secondary" fill className="object-cover object-top scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" />
+                </div>
               </div>
               <div className="flex justify-between items-start">
                 <div className="max-w-2xl">
