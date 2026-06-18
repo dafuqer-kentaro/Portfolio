@@ -78,14 +78,12 @@ export default function Home() {
           </div>
           
           <div className="grid grid-cols-12 gap-x-gutter gap-y-stack-xl">
-            {/* Project 1: Anvys Hub */}
-            <div className="project-card group cursor-pointer col-span-12">
-              <div className="overflow-hidden rounded-xl bg-surface-container-low aspect-[21/9] relative">
-                 <div className="absolute inset-0 flex items-center justify-center text-on-surface-variant/50 font-headline-md">
-                   Anvys Hub Screenshot Placeholder
-                 </div>
+            {/* Project 1 */}
+            <div className="project-card group cursor-pointer col-span-12 lg:col-span-8">
+              <div className="overflow-hidden rounded-xl bg-surface-container aspect-video relative mb-8">
+                <Image src="/projects/anvy.png" alt="Anvys Hub" fill className="object-cover object-top scale-100 group-hover:scale-105 transition-transform duration-700 ease-out" />
               </div>
-              <div className="mt-8 flex justify-between items-start">
+              <div className="flex justify-between items-start">
                 <div className="max-w-2xl">
                   <div className="flex gap-3 mb-4">
                     <span className="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-xs uppercase tracking-wider">Full-Stack</span>
@@ -102,10 +100,8 @@ export default function Home() {
 
             {/* Project 2: Queuing Simulator */}
             <div className="project-card group cursor-pointer col-span-12 lg:col-span-6">
-              <div className="overflow-hidden rounded-xl bg-surface-container-low aspect-[4/3] relative">
-                 <div className="absolute inset-0 flex items-center justify-center text-on-surface-variant/50 font-headline-md text-center px-4">
-                   Internet Cafe Queuing Simulator<br/>Screenshot Placeholder
-                 </div>
+              <div className="overflow-hidden rounded-xl bg-surface-container aspect-[4/3] relative mb-8">
+                 <Image src="/projects/cafe.png" alt="Queuing Simulator" fill className="object-cover object-top scale-100 group-hover:scale-105 transition-transform duration-700 ease-out" />
               </div>
               <div className="mt-8">
                 <div className="flex gap-3 mb-4">
@@ -121,10 +117,8 @@ export default function Home() {
 
             {/* Project 3: GYMRAI */}
             <div className="project-card group cursor-pointer col-span-12 lg:col-span-6">
-              <div className="overflow-hidden rounded-xl bg-surface-container-low aspect-[4/3] relative">
-                 <div className="absolute inset-0 flex items-center justify-center text-on-surface-variant/50 font-headline-md">
-                   GYMRAI Screenshot Placeholder
-                 </div>
+              <div className="overflow-hidden rounded-xl bg-surface-container aspect-[4/3] relative mb-8">
+                 <Image src="/projects/gymrai.png" alt="GYMRAI" fill className="object-cover object-top scale-100 group-hover:scale-105 transition-transform duration-700 ease-out" />
               </div>
               <div className="mt-8">
                 <div className="flex gap-3 mb-4">
