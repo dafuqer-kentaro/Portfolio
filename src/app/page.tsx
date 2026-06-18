@@ -7,14 +7,14 @@ export default function Home() {
       <header className="bg-surface/80 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-outline-variant/30">
         <nav className="flex justify-between items-center px-margin-desktop h-20 w-full max-w-container-max mx-auto">
           <div className="flex items-center flex-1">
-            <a className="font-headline-md text-headline-md tracking-tighter text-primary uppercase whitespace-nowrap" href="#">KENT SERENCIO</a>
+            <a className="font-headline-md text-xl md:text-headline-md tracking-tighter text-primary uppercase whitespace-nowrap" href="#">KENT SERENCIO</a>
           </div>
           <div className="hidden md:flex items-center justify-center gap-12 flex-1">
             <a className="relative font-label-md text-label-md text-secondary border-b-2 border-secondary pb-1 transition-all duration-300 ease-in-out" href="#work">Work</a>
             <a className="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" href="/contact">Contact</a>
           </div>
           <div className="flex-1 flex justify-end">
-            <a href="/contact" className="bg-primary text-on-primary px-8 py-3 rounded-full font-label-md hover:bg-secondary transition-all duration-300 shadow-lg hover:shadow-secondary/20">
+            <a href="/contact" className="bg-primary text-on-primary px-6 py-2 md:px-8 md:py-3 rounded-full font-label-md hover:bg-secondary transition-all duration-300 shadow-lg hover:shadow-secondary/20 whitespace-nowrap">
               Hire Me
             </a>
           </div>
@@ -32,12 +32,12 @@ export default function Home() {
               <p className="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg leading-relaxed max-w-2xl">
                 I'm Kent Serencio, a passionate Computer Science student based in Davao City. I am eager to learn and grow in full-stack development, applying my problem-solving skills and hands-on experience to build reliable backend systems and create meaningful digital experiences. I am looking forward to gaining real-world experience and continuously improving my skills through practical opportunities.
               </p>
-              <div className="flex flex-row gap-6">
-                <a href="#work" className="bg-primary text-on-primary px-10 py-5 rounded font-label-md hover:bg-secondary transition-all duration-300 flex items-center justify-center gap-3 group text-lg">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-4">
+                <a href="#work" className="bg-primary text-on-primary px-8 py-4 md:px-10 md:py-5 rounded font-label-md hover:bg-secondary transition-all duration-300 flex items-center justify-center gap-3 group text-base md:text-lg w-full sm:w-auto">
                   View Projects
                   <span className="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_forward</span>
                 </a>
-                <a href="/contact" className="bg-transparent border border-primary/20 text-primary px-10 py-5 rounded font-label-md hover:bg-primary hover:text-on-primary transition-all duration-300 flex items-center justify-center text-lg">
+                <a href="/contact" className="bg-transparent border border-primary/20 text-primary px-8 py-4 md:px-10 md:py-5 rounded font-label-md hover:bg-primary hover:text-on-primary transition-all duration-300 flex items-center justify-center text-base md:text-lg w-full sm:w-auto">
                   Contact Me
                 </a>
               </div>
@@ -153,7 +153,7 @@ export default function Home() {
               <div className="aspect-[4/3] bg-surface-container rounded-lg mb-6 overflow-hidden relative group">
                 <Image src="/certificates/Cybersecurity.png" alt="Cybersecurity Certificate" fill className="object-cover object-top scale-100 group-hover:scale-105 transition-transform duration-500" />
               </div>
-              <div className="mt-8 flex justify-between items-start">
+              <div className="mt-8 flex flex-col sm:flex-row justify-between items-start gap-4">
                 <div>
                   <div className="flex gap-3 mb-4">
                     <span className="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-xs uppercase tracking-wider">Certiport</span>
@@ -161,7 +161,7 @@ export default function Home() {
                   </div>
                   <h3 className="font-headline-md text-2xl group-hover:text-secondary transition-colors leading-snug">Information Technology Specialist in Cybersecurity</h3>
                 </div>
-                <a href="/certificates/Cybersecurity.pdf" target="_blank" rel="noopener noreferrer" className="ml-4 flex-shrink-0 bg-on-surface text-surface px-4 py-2 rounded font-label-md text-sm hover:bg-secondary transition-colors flex items-center gap-2 cursor-pointer">
+                <a href="/certificates/Cybersecurity.pdf" target="_blank" rel="noopener noreferrer" className="bg-on-surface text-surface px-4 py-2 rounded font-label-md text-sm hover:bg-secondary transition-colors flex items-center justify-center w-full sm:w-auto gap-2 cursor-pointer flex-shrink-0">
                   View <span className="material-symbols-outlined text-sm">open_in_new</span>
                 </a>
               </div>
@@ -172,7 +172,7 @@ export default function Home() {
               <div className="aspect-[4/3] bg-surface-container rounded-lg mb-6 overflow-hidden relative group">
                 <Image src="/certificates/Databases.png" alt="Databases Certificate" fill className="object-cover object-top scale-100 group-hover:scale-105 transition-transform duration-500" />
               </div>
-              <div className="mt-8 flex justify-between items-start">
+              <div className="mt-8 flex flex-col sm:flex-row justify-between items-start gap-4">
                 <div>
                   <div className="flex gap-3 mb-4">
                     <span className="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-xs uppercase tracking-wider">Certiport</span>
@@ -180,7 +180,7 @@ export default function Home() {
                   </div>
                   <h3 className="font-headline-md text-2xl group-hover:text-secondary transition-colors leading-snug">Information Technology Specialist in Databases</h3>
                 </div>
-                <a href="/certificates/Databases.pdf" target="_blank" rel="noopener noreferrer" className="ml-4 flex-shrink-0 bg-on-surface text-surface px-4 py-2 rounded font-label-md text-sm hover:bg-secondary transition-colors flex items-center gap-2 cursor-pointer">
+                <a href="/certificates/Databases.pdf" target="_blank" rel="noopener noreferrer" className="bg-on-surface text-surface px-4 py-2 rounded font-label-md text-sm hover:bg-secondary transition-colors flex items-center justify-center w-full sm:w-auto gap-2 cursor-pointer flex-shrink-0">
                   View <span className="material-symbols-outlined text-sm">open_in_new</span>
                 </a>
               </div>
