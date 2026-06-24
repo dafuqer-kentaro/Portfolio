@@ -147,6 +147,23 @@ export default function Home() {
                 </p>
               </div>
             </div>
+
+            {/* Project 4: Iris Classifier */}
+            <div className="project-card group cursor-pointer col-span-12 lg:col-span-6">
+              <div className="overflow-hidden rounded-xl bg-surface-container mb-8 border border-outline-variant/10">
+                 <Image src="/projects/iris.png" alt="Iris Flower Species Classifier" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} className="scale-100 group-hover:scale-105 transition-transform duration-700 ease-out" />
+              </div>
+              <div className="mt-8">
+                <div className="flex gap-3 mb-4">
+                  <span className="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-xs uppercase tracking-wider">Python</span>
+                  <span className="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-xs uppercase tracking-wider">Machine Learning</span>
+                </div>
+                <h3 className="font-headline-md text-3xl group-hover:text-secondary transition-colors">Iris Species Classifier</h3>
+                <p className="font-body-md text-on-surface-variant mt-2 max-w-md">
+                  Machine learning model utilizing Support Vector Machine (SVM) to accurately predict iris flower species based on petal and sepal measurements.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
