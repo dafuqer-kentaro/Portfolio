@@ -89,80 +89,83 @@ export default function Home() {
           </div>
           
           <div className="grid grid-cols-12 gap-x-gutter gap-y-stack-xl">
-            {/* Project 1 */}
-            <FadeIn delay={0} className="project-card group cursor-pointer col-span-12 lg:col-span-8">
-              <div className="overflow-hidden rounded-xl bg-surface-container relative mb-8 border border-outline-variant/50 shadow-lg">
+            {/* Project 1: Anvys Hub */}
+            <FadeIn delay={0} className="project-card group cursor-pointer col-span-12 lg:col-span-7 flex flex-col h-full">
+              <div className="overflow-hidden rounded-xl bg-surface-container relative mb-8 border border-outline-variant/50 shadow-lg flex-grow">
                 {/* Image 1 (POS - visible by default, sets container height) */}
-                <Image src="/projects/anvy.png" alt="Anvys Hub POS" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} className="relative z-10 block opacity-100 group-hover:opacity-0 transition-opacity duration-700 ease-in-out" />
+                <Image src="/projects/anvy.png" alt="Anvys Hub POS" width={0} height={0} sizes="100vw" style={{ width: '100%', height: '100%', objectFit: 'cover' }} className="relative z-10 block opacity-100 group-hover:opacity-0 transition-opacity duration-700 ease-in-out aspect-video md:aspect-auto" />
                 
                 {/* Image 2 (Dashboard - hidden by default, revealed on hover) */}
                 <div className="absolute inset-0 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out overflow-hidden bg-white rounded-xl">
-                  <Image src="/projects/anvy1.png" alt="Anvys Hub Dashboard" fill className="object-contain object-top" />
+                  <Image src="/projects/anvy1.png" alt="Anvys Hub Dashboard" fill className="object-cover object-top" />
                 </div>
               </div>
-              <div className="flex justify-between items-start">
+              <div className="flex justify-between items-start mt-auto">
                 <div className="max-w-2xl">
-                  <div className="flex gap-3 mb-4">
-                    <span className="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-xs uppercase tracking-wider">Full-Stack</span>
-                    <span className="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-xs uppercase tracking-wider">Laravel & React</span>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="bg-surface-container text-on-surface-variant px-3 py-1 rounded-full font-label-md text-[10px] uppercase tracking-wider">Full-Stack</span>
+                    <span className="bg-surface-container text-on-surface-variant px-3 py-1 rounded-full font-label-md text-[10px] uppercase tracking-wider">Laravel & React</span>
                   </div>
-                  <h3 className="font-headline-md text-4xl group-hover:text-secondary transition-colors">Anvys Hub</h3>
-                  <p className="font-body-md text-body-lg text-on-surface-variant mt-4">
+                  <h3 className="font-headline-md text-3xl group-hover:text-secondary transition-colors line-clamp-2">Anvys Hub</h3>
+                  <p className="font-body-md text-on-surface-variant mt-2 line-clamp-3">
                     Full-stack enterprise management system with real-time POS, automated payroll, and Zero-Trust IP Geofencing.
                   </p>
                 </div>
-                <span className="material-symbols-outlined text-4xl opacity-0 group-hover:opacity-100 transition-all transform translate-x-[-20px] group-hover:translate-x-0">arrow_outward</span>
+                <span className="material-symbols-outlined text-3xl opacity-0 group-hover:opacity-100 transition-all transform translate-x-[-10px] group-hover:translate-x-0 hidden sm:block">arrow_outward</span>
               </div>
             </FadeIn>
 
-            {/* Project 2: Queuing Simulator */}
-            <FadeIn delay={200} className="project-card group cursor-pointer col-span-12 lg:col-span-6">
-              <div className="overflow-hidden rounded-xl bg-surface-container mb-8 border border-outline-variant/10">
-                 <Image src="/projects/cafe.png" alt="Queuing Simulator" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} className="scale-100 group-hover:scale-105 transition-transform duration-700 ease-out" />
+            {/* Project 2: GYMRAI */}
+            <FadeIn delay={200} className="project-card group cursor-pointer col-span-12 lg:col-span-5 flex flex-col h-full">
+              <div className="overflow-hidden rounded-xl bg-surface-container mb-8 border border-outline-variant/10 flex-grow relative">
+                 <Image src="/projects/gymrai.png" alt="GYMRAI" width={0} height={0} sizes="100vw" style={{ width: '100%', height: '100%', objectFit: 'cover' }} className="scale-100 group-hover:scale-105 transition-transform duration-700 ease-out aspect-video md:aspect-auto" />
               </div>
-              <div className="mt-8">
-                <div className="flex gap-3 mb-4">
-                  <span className="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-xs uppercase tracking-wider">Python</span>
-                  <span className="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-xs uppercase tracking-wider">Simulation</span>
+              <div className="mt-auto">
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="bg-surface-container text-on-surface-variant px-3 py-1 rounded-full font-label-md text-[10px] uppercase tracking-wider">Next.js</span>
+                  <span className="bg-surface-container text-on-surface-variant px-3 py-1 rounded-full font-label-md text-[10px] uppercase tracking-wider">TypeScript</span>
                 </div>
-                <h3 className="font-headline-md text-3xl group-hover:text-secondary transition-colors">Internet Cafe Queuing Simulator</h3>
-                <p className="font-body-md text-on-surface-variant mt-2 max-w-md">
-                  Full-stack simulation engine to model customer queuing dynamics and hardware efficiency.
-                </p>
-              </div>
-            </FadeIn>
-
-            {/* Project 3: GYMRAI */}
-            <FadeIn delay={400} className="project-card group cursor-pointer col-span-12 lg:col-span-6">
-              <div className="overflow-hidden rounded-xl bg-surface-container mb-8 border border-outline-variant/10">
-                 <Image src="/projects/gymrai.png" alt="GYMRAI" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} className="scale-100 group-hover:scale-105 transition-transform duration-700 ease-out" />
-              </div>
-              <div className="mt-8">
-                <div className="flex gap-3 mb-4">
-                  <span className="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-xs uppercase tracking-wider">Next.js</span>
-                  <span className="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-xs uppercase tracking-wider">TypeScript</span>
-                </div>
-                <h3 className="font-headline-md text-3xl group-hover:text-secondary transition-colors">GYMRAI</h3>
-                <p className="font-body-md text-on-surface-variant mt-2 max-w-md">
+                <h3 className="font-headline-md text-3xl group-hover:text-secondary transition-colors line-clamp-2">GYMRAI</h3>
+                <p className="font-body-md text-on-surface-variant mt-2 line-clamp-3">
                   Elite performance tracking application featuring a highly responsive, custom-designed UI and real-time metric visualization.
                 </p>
               </div>
             </FadeIn>
 
-            {/* Project 4: Iris Classifier */}
-            <FadeIn delay={600} className="project-card group cursor-pointer col-span-12 lg:col-span-6">
-              <div className="overflow-hidden rounded-xl bg-surface-container mb-8 border border-outline-variant/10">
-                 <Image src="/projects/iris.png" alt="Iris Flower Species Classifier" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} className="scale-100 group-hover:scale-105 transition-transform duration-700 ease-out" />
+            {/* Project 3: Queuing Simulator */}
+            <FadeIn delay={400} className="project-card group cursor-pointer col-span-12 lg:col-span-5 flex flex-col h-full">
+              <div className="overflow-hidden rounded-xl bg-surface-container mb-8 border border-outline-variant/10 flex-grow relative">
+                 <Image src="/projects/cafe.png" alt="Queuing Simulator" width={0} height={0} sizes="100vw" style={{ width: '100%', height: '100%', objectFit: 'cover' }} className="scale-100 group-hover:scale-105 transition-transform duration-700 ease-out aspect-video md:aspect-auto" />
               </div>
-              <div className="mt-8">
-                <div className="flex gap-3 mb-4">
-                  <span className="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-xs uppercase tracking-wider">Python</span>
-                  <span className="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-md text-xs uppercase tracking-wider">Machine Learning</span>
+              <div className="mt-auto">
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="bg-surface-container text-on-surface-variant px-3 py-1 rounded-full font-label-md text-[10px] uppercase tracking-wider">Python</span>
+                  <span className="bg-surface-container text-on-surface-variant px-3 py-1 rounded-full font-label-md text-[10px] uppercase tracking-wider">Simulation</span>
                 </div>
-                <h3 className="font-headline-md text-3xl group-hover:text-secondary transition-colors">Iris Species Classifier</h3>
-                <p className="font-body-md text-on-surface-variant mt-2 max-w-md">
-                  Machine learning model utilizing Support Vector Machine (SVM) to accurately predict iris flower species based on petal and sepal measurements.
+                <h3 className="font-headline-md text-3xl group-hover:text-secondary transition-colors line-clamp-2">Internet Cafe Queuing Simulator</h3>
+                <p className="font-body-md text-on-surface-variant mt-2 line-clamp-3">
+                  Full-stack simulation engine to model customer queuing dynamics and hardware efficiency.
                 </p>
+              </div>
+            </FadeIn>
+
+            {/* Project 4: Iris Classifier */}
+            <FadeIn delay={600} className="project-card group cursor-pointer col-span-12 lg:col-span-7 flex flex-col h-full">
+              <div className="overflow-hidden rounded-xl bg-surface-container mb-8 border border-outline-variant/10 flex-grow relative">
+                 <Image src="/projects/iris.png" alt="Iris Flower Species Classifier" width={0} height={0} sizes="100vw" style={{ width: '100%', height: '100%', objectFit: 'cover' }} className="scale-100 group-hover:scale-105 transition-transform duration-700 ease-out aspect-video md:aspect-auto" />
+              </div>
+              <div className="flex justify-between items-start mt-auto">
+                <div className="max-w-2xl">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="bg-surface-container text-on-surface-variant px-3 py-1 rounded-full font-label-md text-[10px] uppercase tracking-wider">Python</span>
+                    <span className="bg-surface-container text-on-surface-variant px-3 py-1 rounded-full font-label-md text-[10px] uppercase tracking-wider">Machine Learning</span>
+                  </div>
+                  <h3 className="font-headline-md text-3xl group-hover:text-secondary transition-colors line-clamp-2">Iris Species Classifier</h3>
+                  <p className="font-body-md text-on-surface-variant mt-2 line-clamp-3">
+                    Machine learning model utilizing Support Vector Machine (SVM) to accurately predict iris flower species based on petal and sepal measurements.
+                  </p>
+                </div>
+                <span className="material-symbols-outlined text-3xl opacity-0 group-hover:opacity-100 transition-all transform translate-x-[-10px] group-hover:translate-x-0 hidden sm:block">arrow_outward</span>
               </div>
             </FadeIn>
           </div>
