@@ -61,12 +61,22 @@ export default function Home() {
             <h2 className="font-headline-lg text-4xl md:text-5xl lg:text-headline-lg">Capabilities</h2>
             <span className="font-label-md text-xs sm:text-label-md text-on-surface-variant uppercase tracking-[0.2em]">Tech Stack</span>
           </div>
-          <div className="flex flex-wrap gap-4">
-            {["React.js", "Next.js", "Laravel", "Python", "PHP", "TypeScript", "Tailwind CSS", "HTML/CSS", "MySQL", "Firebase"].map((skill) => (
-              <span key={skill} className="bg-surface-container text-on-surface-variant px-6 py-3 rounded-full font-label-md text-sm uppercase tracking-wider hover:bg-surface-variant transition-colors cursor-default">
-                {skill}
-              </span>
-            ))}
+          <div className="overflow-hidden relative w-full py-4 flex">
+            {/* Optional gradient masks for smooth fade edges */}
+            <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none"></div>
+            <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none"></div>
+            
+            <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">
+              {[...Array(2)].map((_, i) => (
+                <div key={i} className="flex gap-4 pr-4">
+                  {["React.js", "Next.js", "Laravel", "Python", "PHP", "TypeScript", "Tailwind CSS", "HTML/CSS", "MySQL", "Firebase"].map((skill) => (
+                    <span key={`${i}-${skill}`} className="bg-surface-container text-on-surface-variant px-6 py-3 rounded-full font-label-md text-sm uppercase tracking-wider hover:bg-surface-variant hover:scale-105 hover:-translate-y-1 hover:shadow-md transition-all duration-300 cursor-default whitespace-nowrap">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
