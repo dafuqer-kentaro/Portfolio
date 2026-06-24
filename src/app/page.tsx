@@ -1,4 +1,5 @@
 import Image from "next/image";
+import FadeIn from "../components/FadeIn";
 
 export default function Home() {
   return (
@@ -89,7 +90,7 @@ export default function Home() {
           
           <div className="grid grid-cols-12 gap-x-gutter gap-y-stack-xl">
             {/* Project 1 */}
-            <div className="project-card group cursor-pointer col-span-12 lg:col-span-8">
+            <FadeIn delay={0} className="project-card group cursor-pointer col-span-12 lg:col-span-8">
               <div className="overflow-hidden rounded-xl bg-surface-container relative mb-8 border border-outline-variant/50 shadow-lg">
                 {/* Image 1 (POS - visible by default, sets container height) */}
                 <Image src="/projects/anvy.png" alt="Anvys Hub POS" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} className="relative z-10 block opacity-100 group-hover:opacity-0 transition-opacity duration-700 ease-in-out" />
@@ -112,10 +113,10 @@ export default function Home() {
                 </div>
                 <span className="material-symbols-outlined text-4xl opacity-0 group-hover:opacity-100 transition-all transform translate-x-[-20px] group-hover:translate-x-0">arrow_outward</span>
               </div>
-            </div>
+            </FadeIn>
 
             {/* Project 2: Queuing Simulator */}
-            <div className="project-card group cursor-pointer col-span-12 lg:col-span-6">
+            <FadeIn delay={200} className="project-card group cursor-pointer col-span-12 lg:col-span-6">
               <div className="overflow-hidden rounded-xl bg-surface-container mb-8 border border-outline-variant/10">
                  <Image src="/projects/cafe.png" alt="Queuing Simulator" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} className="scale-100 group-hover:scale-105 transition-transform duration-700 ease-out" />
               </div>
@@ -129,10 +130,10 @@ export default function Home() {
                   Full-stack simulation engine to model customer queuing dynamics and hardware efficiency.
                 </p>
               </div>
-            </div>
+            </FadeIn>
 
             {/* Project 3: GYMRAI */}
-            <div className="project-card group cursor-pointer col-span-12 lg:col-span-6">
+            <FadeIn delay={400} className="project-card group cursor-pointer col-span-12 lg:col-span-6">
               <div className="overflow-hidden rounded-xl bg-surface-container mb-8 border border-outline-variant/10">
                  <Image src="/projects/gymrai.png" alt="GYMRAI" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} className="scale-100 group-hover:scale-105 transition-transform duration-700 ease-out" />
               </div>
@@ -146,10 +147,10 @@ export default function Home() {
                   Elite performance tracking application featuring a highly responsive, custom-designed UI and real-time metric visualization.
                 </p>
               </div>
-            </div>
+            </FadeIn>
 
             {/* Project 4: Iris Classifier */}
-            <div className="project-card group cursor-pointer col-span-12 lg:col-span-6">
+            <FadeIn delay={600} className="project-card group cursor-pointer col-span-12 lg:col-span-6">
               <div className="overflow-hidden rounded-xl bg-surface-container mb-8 border border-outline-variant/10">
                  <Image src="/projects/iris.png" alt="Iris Flower Species Classifier" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} className="scale-100 group-hover:scale-105 transition-transform duration-700 ease-out" />
               </div>
@@ -163,7 +164,7 @@ export default function Home() {
                   Machine learning model utilizing Support Vector Machine (SVM) to accurately predict iris flower species based on petal and sepal measurements.
                 </p>
               </div>
-            </div>
+            </FadeIn>
           </div>
         </section>
 
